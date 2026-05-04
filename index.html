@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lululemon Discounts + Rewards</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      color: #111;
+      line-height: 1.4;
+    }
+
+    .page {
+      max-width: 460px;
+      margin: 0 auto;
+      padding: 44px 16px;
+    }
+
+    .brand {
+      text-align: center;
+      font-size: 34px;
+      font-weight: 900;
+      letter-spacing: 12px;
+      color: #111;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+    }
+
+    .headline {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .headline h1 {
+      font-size: 25px;
+      line-height: 1.1;
+      font-weight: 900;
+      color: #111;
+      white-space: nowrap;
+    }
+
+    .pill {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 18px;
+      border-radius: 999px;
+      background: #d71920;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 900;
+      box-shadow: 0 8px 18px rgba(215,25,32,0.25);
+    }
+
+    .subtext {
+      text-align: center;
+      font-size: 14px;
+      color: #3b4a5a;
+      margin: 14px 0 24px;
+    }
+
+    .step {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 16px;
+      border: 1px solid #dfe5eb;
+      background: #f8fafc;
+      border-radius: 14px;
+      margin-bottom: 14px;
+    }
+
+    .check {
+      width: 26px;
+      height: 26px;
+      min-width: 26px;
+      border-radius: 50%;
+      background: #111;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 16px;
+    }
+
+    .step h3 {
+      font-size: 15px;
+      font-weight: 900;
+      margin-bottom: 4px;
+      color: #111;
+    }
+
+    .step p {
+      font-size: 13px;
+      color: #3b4a5a;
+    }
+
+    .next-box {
+      border: 1px solid #dfe5eb;
+      border-radius: 14px;
+      padding: 16px;
+      margin: 20px 0;
+      background: #fff;
+    }
+
+    .next-box h3 {
+      font-size: 16px;
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+
+    .next-box p {
+      font-size: 13px;
+      color: #3b4a5a;
+    }
+
+    .cta {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background: #111;
+      color: white;
+      font-size: 17px;
+      font-weight: 900;
+      padding: 17px 14px;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 18px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+      cursor: pointer;
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+    }
+
+    .small-note {
+      text-align: center;
+      font-size: 11px;
+      color: #667085;
+      margin: 12px 0 24px;
+    }
+
+    .faq-title {
+      font-size: 24px;
+      font-weight: 900;
+      margin-bottom: 14px;
+      color: #111;
+    }
+
+    .faq-item {
+      border: 1px solid #dfe5eb;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 15px 14px;
+      background: #fff;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 900;
+      cursor: pointer;
+      color: #111;
+      text-align: left;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 14px 15px;
+      font-size: 13px;
+      color: #3b4a5a;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .symbol {
+      font-size: 20px;
+      font-weight: 900;
+      color: #111;
+      padding-left: 12px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 10px;
+      color: #8a94a6;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 420px) {
+      .headline h1 {
+        font-size: 22px;
+      }
+
+      .brand {
+        font-size: 28px;
+        letter-spacing: 9px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="brand">LULULEMON</div>
+
+    <section class="card">
+      <div class="headline">
+        <h1>Lululemon Discounts + Rewards</h1>
+        <div class="pill">Up to $500</div>
+      </div>
+
+      <p class="subtext">
+        This page explains how people are getting Lululemon rewards online.
+      </p>
+
+      <div class="step">
+        <div class="check">✓</div>
+        <div>
+          <h3>Enter a valid email</h3>
+          <p>Continue to the next page and submit your email to start.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="check">✓</div>
+        <div>
+          <h3>Complete 4–5 deals</h3>
+          <p>Deals may include surveys, app installs, trial offers, or similar steps.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="check">✓</div>
+        <div>
+          <h3>Receive your reward</h3>
+          <p>After completing the required steps, you can qualify for your reward.</p>
+        </div>
+      </div>
+
+      <div class="next-box">
+        <h3>What happens next?</h3>
+        <p>You’ll continue to the next page, answer a few quick questions, submit your email, and complete the required deals shown to you.</p>
+      </div>
+
+      <a class="cta" href="https://trksy.org/aff_c?offer_id=314&aff_id=170653&source=lulubridgetest01">
+        Continue to Next Step →
+      </a>
+
+      <p class="small-note">
+        Must be 18+ to participate. Eligibility and completion requirements apply.
+      </p>
+
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How do I get the discount?
+          <span class="symbol">+</span>
+        </button>
+        <div class="faq-answer">
+          Tap the button above, submit your email, and complete the required deals shown on the next page.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How many deals do I have to do?
+          <span class="symbol">+</span>
+        </button>
+        <div class="faq-answer">
+          Most users may need to complete around 4–5 deals depending on the path shown to them.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How long do the deals take?
+          <span class="symbol">+</span>
+        </button>
+        <div class="faq-answer">
+          It depends on the deals shown. Some are quick, while others may take longer.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do I have to be 18?
+          <span class="symbol">+</span>
+        </button>
+        <div class="faq-answer">
+          Yes. You must be 18 or older to participate.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          When will I receive my reward?
+          <span class="symbol">+</span>
+        </button>
+        <div class="faq-answer">
+          After completing the required deals, you can qualify for the reward shown on the next page.
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">
+      This page is not owned by or affiliated with Lululemon. Brand names are used for identification purposes only.
+    </p>
+  </main>
+
+  <script>
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach((item) => {
+      const button = item.querySelector(".faq-question");
+      const symbol = item.querySelector(".symbol");
+
+      button.addEventListener("click", () => {
+        item.classList.toggle("active");
+        symbol.textContent = item.classList.contains("active") ? "-" : "+";
+      });
+    });
+  </script>
+</body>
+</html>
